@@ -75,33 +75,47 @@ body {
 .squares_empty {
   background-color: #ededed;
 }
+.squares_one {
+  position: relative;
 
-.squares_two {
   background-color: #acd5f2;
 }
+.squares_two {
+  position: relative;
 
-.squares_three {
   background-color: #7fa8c9;
 }
 
-.squares_four {
+.squares_three {
+  position: relative;
+
   background-color: #527ba0;
 }
-.squares_five {
+
+.squares_four {
   background-color: #254e77;
 }
+.container {
+  .deck {
+    z-index: 2;
 
-.deck {
-  width: 160px;
-  height: 75px;
-  background-color: #000;
-  border-radius: 10px;
-  .contributions {
-    color: #fff;
-    text-align: center;
+    position: absolute;
+    width: 160px;
+    height: 75px;
+    background-color: #000;
+    border-radius: 10px;
+    .contributions {
+      color: #fff;
+      text-align: center;
+    }
+    .dataId {
+      text-align: center;
+      color: #fff;
+    }
   }
-  .dataId {
-    text-align: center;
-    color: #fff;
-  }
+}
+
+.what {
+  font-size: 18px;
+  color: #333639;
 }
